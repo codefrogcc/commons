@@ -35,16 +35,16 @@
     </licenses>
     <scm>
         <!-- 项目地址 -->
-        <url>https://github.com/codefrogcc/commons</url>
+        <url>https://github.com/yangli520zw/commonsconfig</url>
         <!-- 我填的是项目的下载路径 -->
-        <connection>https://github.com/codefrogcc/commons.git</connection>
+        <connection>https://github.com/yangli520zw/commonsconfig.git</connection>
     </scm>
     <developers>
         <developer>
             <!-- 开发人员名称 -->
-            <name>dear_satant</name>
+            <name>yangli520zw</name>
             <!-- 开发人员邮箱 -->
-            <email>dear_satant@163.com</email>
+            <email>249007302@qq.com</email>
         </developer>
     </developers>
 
