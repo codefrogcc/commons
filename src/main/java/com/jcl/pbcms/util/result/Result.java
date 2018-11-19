@@ -11,9 +11,7 @@ public class Result<T> {
 	private String msg;
 	private T data;
 	
-	/**
-	 *  成功时候的调用
-	 * */
+
 	public static  <T> Result<T> success(T data){
 		return new Result<T>(data);
 	}
@@ -27,9 +25,7 @@ public class Result<T> {
 	public static <T> Result<T> success(){
 		return new Result<T>(CodeMsg.SUCCESS);
 	}
-	/**
-	 *  失败时候的调用
-	 * */
+
 	public static  <T> Result<T> error(CodeMsg codeMsg){
 		return new Result<T>(codeMsg);
 	}

@@ -4,12 +4,6 @@ package com.jcl.pbcms.util.shiroutil;
 
 import java.io.Serializable;
 
-/**
- * @类名称： ResponseResult
- * @类描述： 前端请求响应结果,code:编码,message:描述,obj对象，可以是单个数据对象，数据列表或者PageInfo
- * @创建时间： 2018年10月9日
- * @version:
- */
 public class ResponseResult implements Serializable {
 	
 	private static final long serialVersionUID = 7285065610386199394L;

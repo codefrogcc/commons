@@ -1,7 +1,4 @@
 package com.jcl.pbcms.util.validation;
-/**
- * 生成验证码工具
- */
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,16 +29,11 @@ public class RandomValidateCodeUtil {
                                                     'i','J','K','l','P','o','O','p','q','Q','R','s','T','U','V','w',
                                                     'x','Y','y','x','Z','z','0','1','2','6','5','7','9','4','3','8'
                                                     };
-    /**
-     * 获得字体
-     */
+
     private Font getFont() {
         return new Font("Fixedsys", Font.CENTER_BASELINE, 18);
     }
 
-    /**
-     * 获得颜色
-     */
     private Color getRandColor(int fc, int bc) {
         if (fc > 255)
             fc = 255;
@@ -53,9 +45,6 @@ public class RandomValidateCodeUtil {
         return new Color(r, g, b);
     }
 
-    /**
-     * 生成随机图片
-     */
     public void getRandcode(HttpServletRequest request, HttpServletResponse response) {
         HttpSession session = request.getSession();
         // BufferedImage类是具有缓冲区的Image类,Image类是用于描述图像信息的类
@@ -89,9 +78,6 @@ public class RandomValidateCodeUtil {
 
     }
 
-    /**
-     * 绘制字符串
-     */
     private String drowString(Graphics g, String randomString, int i) {
         g.setFont(getFont());
         g.setColor(new Color(random.nextInt(101), random.nextInt(111), random
@@ -103,9 +89,6 @@ public class RandomValidateCodeUtil {
         return randomString;
     }
 
-    /**
-     * 绘制干扰线
-     */
     private void drowLine(Graphics g) {
         int x = random.nextInt(width);
         int y = random.nextInt(height);
@@ -114,9 +97,6 @@ public class RandomValidateCodeUtil {
         g.drawLine(x, y, x + xl, y + yl);
     }
 
-    /**
-     * 获取随机的字符
-     */
     public String getRandomString() {
         return String.valueOf(LETTER[(int)(LETTER.length* Math.random())]);
     }

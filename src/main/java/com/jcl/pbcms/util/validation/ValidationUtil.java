@@ -95,11 +95,7 @@ public class ValidationUtil {
         }
     }
 
-    /**
-     * 判断number是否为num的整数倍（number/num）并且number>0
-     * @param number
-     * @return
-     */
+
     public static Boolean isInt(BigDecimal number,BigDecimal num){
         if(number == null || num == null){
             return false;

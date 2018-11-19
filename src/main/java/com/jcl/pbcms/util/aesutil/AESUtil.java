@@ -15,36 +15,17 @@ public class AESUtil {
     private static final String defaultCharset = "UTF-8";
     private static final String KEY_AES = "AES";
     private static final String KEY = "123456";
-    /**
-     * 加密
-     *
-     * @param data 需要加密的内容
-     * @param key 加密密码
-     * @return
-     */
+
     public static String encrypt(String data, String key) {
         return doAES(data, key, Cipher.ENCRYPT_MODE);
     }
 
-    /**
-     * 解密
-     *
-     * @param data 待解密内容
-     * @param key 解密密钥
-     * @return
-     */
+
     public static String decrypt(String data, String key) {
         return doAES(data, key, Cipher.DECRYPT_MODE);
     }
 
-    /**
-     * 加解密
-     *
-     * @param data 待处理数据
-     * @param key  密钥
-     * @param mode 加解密mode
-     * @return
-     */
+
     private static String doAES(String data, String key, int mode) {
         try {
             if (StringUtils.isBlank(data) || StringUtils.isBlank(key)) {
@@ -86,12 +67,7 @@ public class AESUtil {
         }
         return null;
     }
-    /**
-     * 将二进制转换成16进制
-     *
-     * @param buf
-     * @return
-     */
+
     public static String parseByte2HexStr(byte buf[]) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < buf.length; i++) {
@@ -103,12 +79,7 @@ public class AESUtil {
         }
         return sb.toString();
     }
-    /**
-     * 将16进制转换为二进制
-     *
-     * @param hexStr
-     * @return
-     */
+
     public static byte[] parseHexStr2Byte(String hexStr) {
         if (hexStr.length() < 1) {
             return null;

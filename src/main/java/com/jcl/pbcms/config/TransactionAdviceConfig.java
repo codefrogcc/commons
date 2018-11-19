@@ -13,9 +13,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * 声明式事务类
- */
+
 //@Aspect
 @Configuration
 public class TransactionAdviceConfig {

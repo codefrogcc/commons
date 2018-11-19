@@ -6,9 +6,7 @@ import tk.mybatis.mapper.util.StringUtil;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-/**
- * 密码格式是否符合
- */
+
 public class PasswordImpl implements ConstraintValidator<Password,String> {
 
     private boolean required;

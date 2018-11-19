@@ -1,11 +1,6 @@
 package com.jcl.pbcms.util.shiroutil;
 
-/**
- * @类名称： IStatusMessage
- * @类描述：响应状态信息
- * @创建时间： 2018年10月9日
- * @version:
- */
+
 public interface IStatusMessage {
 	
 	String getCode();

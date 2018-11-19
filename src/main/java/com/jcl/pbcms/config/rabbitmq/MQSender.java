@@ -28,9 +28,7 @@ public class MQSender {
 		log.info("send message:"+message);
 
 		rabbitTemplate.setConfirmCallback(mqConfirmCallback);
-		/**
-		 * set各种service业务
-		 */
+
 		rabbitTemplate.convertAndSend(RabbitMQConfig.QUEUE, message);
 
 

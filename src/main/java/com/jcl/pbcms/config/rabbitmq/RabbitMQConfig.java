@@ -18,17 +18,12 @@ public class RabbitMQConfig {
     public static final String FANOUT_EXCHANGE = "fanoutxchage";
     public static final String HEADERS_EXCHANGE = "headersExchage";
 
-    /**
-     * Direct模式 交换机Exchange
-     * */
+
     @Bean
     public Queue queue() {
         return new Queue(QUEUE, true);
     }
 
-    /**
-     * Topic模式 交换机Exchange
-     * */
     @Bean
     public Queue topicQueue1() {
         return new Queue(TOPIC_QUEUE1, true);
@@ -49,9 +44,7 @@ public class RabbitMQConfig {
     public Binding topicBinding2() {
         return BindingBuilder.bind(topicQueue2()).to(topicExchage()).with("topic.#");
     }
-    /**
-     * Fanout模式 交换机Exchange
-     * */
+
     @Bean
     public FanoutExchange fanoutExchage(){
         return new FanoutExchange(FANOUT_EXCHANGE);
@@ -64,9 +57,7 @@ public class RabbitMQConfig {
     public Binding FanoutBinding2() {
         return BindingBuilder.bind(topicQueue2()).to(fanoutExchage());
     }
-    /**
-     * Header模式 交换机Exchange
-     * */
+
     @Bean
     public HeadersExchange headersExchage(){
         return new HeadersExchange(HEADERS_EXCHANGE);

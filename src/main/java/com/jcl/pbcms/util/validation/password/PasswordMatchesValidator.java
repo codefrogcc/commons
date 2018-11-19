@@ -5,9 +5,7 @@ import org.apache.commons.beanutils.BeanUtils;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-/**
- * 密码与确认密码是否匹配
- */
+
 public class PasswordMatchesValidator implements ConstraintValidator<PasswordMatches,Object> {
 
     private String field;

@@ -9,24 +9,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
 
-/**
- * 
- * @类名称：ShiroFilterUtils
- * @类描述：shiro工具类
- * @创建时间：2018年10月9日
- * @version：
- */
+
 public class ShiroFilterUtils {
 	private static final Logger logger = LoggerFactory
 			.getLogger(ShiroFilterUtils.class);
 	private final static ObjectMapper objectMapper = new ObjectMapper();
-    /**
-     * 
-     * @描述：判断请求是否是ajax
-     * @创建时间：2018年10月9日
-     * @param request
-     * @return
-     */
+
     public static boolean isAjax(ServletRequest request){
     	String header = ((HttpServletRequest) request).getHeader("X-Requested-With");
     	if("XMLHttpRequest".equalsIgnoreCase(header)){
@@ -37,13 +25,6 @@ public class ShiroFilterUtils {
     	return Boolean.FALSE;
     }
 
-	/**
-	 *
-	 * @描述：response输出json
-	 * @创建时间：2018年10月9日
-	 * @param response
-	 * @param result
-	 */
 	public static void out(HttpServletResponse response, ResponseResult result){
 		PrintWriter out = null;
 		try {

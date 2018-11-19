@@ -5,9 +5,6 @@ import com.jcl.pbcms.util.validation.ValidationUtil;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-/**
- * 数字校验
- */
 public class NumberValidationImpl implements ConstraintValidator<NumberValidation,Object> {
 
     private boolean required;

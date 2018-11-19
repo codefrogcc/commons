@@ -7,9 +7,6 @@ import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 import java.util.regex.Pattern;
 
-/**
- * 中国手机号格式校验
- */
 public class PhoneValidationImpl implements ConstraintValidator<PhoneValidation,String> {
 
     private boolean required = false;
