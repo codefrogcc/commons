@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.yangli520zw</groupId>
+    <groupId>com.github.codefrogcc</groupId>
     <artifactId>commons-config</artifactId>
     <version>1.0.0</version>
 
@@ -35,16 +35,16 @@
     </licenses>
     <scm>
         <!-- 项目地址 -->
-        <url>https://github.com/yangli520zw/commonsconfig</url>
+        <url>https://github.com/codefrogcc/commons</url>
         <!-- 我填的是项目的下载路径 -->
-        <connection>https://github.com/yangli520zw/commonsconfig.git</connection>
+        <connection>https://github.com/codefrogcc/commons.git</connection>
     </scm>
     <developers>
         <developer>
             <!-- 开发人员名称 -->
-            <name>yangli520zw</name>
+            <name>codefrogcc</name>
             <!-- 开发人员邮箱 -->
-            <email>yangli520zw@126.com</email>
+            <email>issue@codefrog.cc</email>
         </developer>
     </developers>
 
