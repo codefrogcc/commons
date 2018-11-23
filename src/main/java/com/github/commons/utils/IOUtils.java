@@ -10,12 +10,12 @@ import java.util.List;
 public class IOUtils {
 
     private static Logger logger = LoggerFactory.getLogger(IOUtils.class);
+
     /**
-     * 逐行读取文件，返回List集合
      *
-     * @param filePath
-     *            文件路径
-     * @return
+     * 逐行读取文件，返回List集合
+     * @param filePath 文件路径
+     * @return List
      */
     public static List<String> readLine(String filePath) {
         List<String> list = new ArrayList<String>();
@@ -36,9 +36,9 @@ public class IOUtils {
 
     /**
      * 逐行写入文件
-     *
      * @param content
      * @param filePath
+     * @param fileName
      */
     public static void writeFile(List<String> content, String filePath, String fileName) {
         FileOutputStream fos = null;
@@ -77,8 +77,9 @@ public class IOUtils {
 
     /**
      * 复制文件
-     *
-     * @throws IOException
+     * @param inStream
+     * @param destFilePath
+     * @param destFileName
      */
     public static void copyFile(InputStream inStream,String destFilePath,String destFileName) {
         BufferedReader br = null;

@@ -36,8 +36,7 @@ public final class SerialNo {
 
     /**
      * 字符串长度为30
-     *
-     * @return
+     * @return String
      */
     public static synchronized String getLongUNID() {
         String currentTime = getCurrentDateString("yyyyMMddHHmmssSSS");

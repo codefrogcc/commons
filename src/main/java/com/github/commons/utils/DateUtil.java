@@ -30,7 +30,7 @@ public class DateUtil {
      * 尝试把一个String按照指定的多个pattern进行转换,转换成功返回结果,失败返回null,如果值为空直接返回null
      * @param value 需要转换为日期的字符串
      * @param patterns 日期pattern,多个以[,]分割
-     * @return
+     * @return Date
      */
     public static Date tryStr2Date(String value, String patterns) {
         return tryStr2Date(value, StringUtils.split(patterns, ","));
@@ -40,7 +40,7 @@ public class DateUtil {
      * 尝试把一个String按照指定的多个pattern进行转换,转换成功返回结果,失败返回null,如果值为空直接返回null
      * @param value 需要转换为日期的字符串
      * @param patterns 日期pattern数组
-     * @return
+     * @return Date
      */
     public static Date tryStr2Date(String value, String [] patterns) {
         Validate.notEmpty(patterns,"patterns 不能为空");
@@ -61,7 +61,7 @@ public class DateUtil {
     /**
      * 返回当前时间的星期
      * @param date
-     * @return
+     * @return int
      * @throws Exception
      */
     public static int dayForWeek(Date date) throws Exception {
@@ -523,7 +523,7 @@ public class DateUtil {
 
     /**
      * Description: 根据传入日期得到本月月初
-     * @param
+     * @param date
      * @return Date
      */
     public static Date getFirstDateOfMonth(Date date) {
@@ -698,7 +698,11 @@ public class DateUtil {
     }
 
     /**
-     *字符串的日期格式的计算
+     * 字符串的日期格式的计算
+     * @param smdate
+     * @param bdate
+     * @return int
+     * @throws ParseException
      */
     public static int daysBetween(String smdate,String bdate) throws ParseException{
         SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
@@ -716,7 +720,7 @@ public class DateUtil {
     /**
      * @param  dateStr  開始日期
      * @param  span  月份跨度
-     * @throws
+     * @throws ParseException
      */
     public static String getLastDay(String dateStr, int span) throws ParseException{
         Calendar lastDate = Calendar.getInstance();
@@ -731,6 +735,9 @@ public class DateUtil {
 
     /**
      * 时间相加
+     * @param time1
+     * @param time2
+     * @return String
      */
     public static String timeAdd(String time1, String time2){
         String time = "00:00:00";

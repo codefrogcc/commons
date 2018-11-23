@@ -45,7 +45,7 @@ public class AESUtil {
      *
      * @param content
      * @param password
-     * @return
+     * @return 返回解密后的字符串
      */
     public static String decrypt(String content, String password) {
 
@@ -67,11 +67,7 @@ public class AESUtil {
         return null;
     }
 
-    /**
-     * 生成加密秘钥
-     *
-     * @return
-     */
+    /*生成加密秘钥*/
     private static SecretKeySpec getSecretKey(final String password) {
         //返回生成指定算法密钥生成器的 KeyGenerator 对象
         KeyGenerator kg = null;

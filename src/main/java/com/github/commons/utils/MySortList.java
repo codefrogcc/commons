@@ -17,7 +17,9 @@ import java.util.List;
 public class MySortList<E> {
 
     private Logger logger = LoggerFactory.getLogger(MySortList.class);
+
     /**
+     *
      * 对列表中的数据按指定字段进行排序。要求类必须有相关的方法返回字符串、整型、日期等值以进行比较。
      * @param list
      * @param method

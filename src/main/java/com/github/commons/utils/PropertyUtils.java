@@ -43,7 +43,7 @@ public class PropertyUtils {
      * @param path
      * @param fileName
      * @param key
-     * @return
+     * @return String
      */
     public static String getProperty(String path,String fileName,String key){
         if(properties == null){
@@ -79,7 +79,7 @@ public class PropertyUtils {
      * @param fileName
      * @param key
      * @param value
-     * @return
+     * @return Boolean
      */
     public static Boolean updateProperty(String path,String fileName,String key,String value){
         if(properties==null){
