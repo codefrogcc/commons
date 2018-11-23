@@ -1,4 +1,4 @@
-package com.jcl.pbcms.config;
+package org.apache.commons.autoconfig.commonconfig.config;
 
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

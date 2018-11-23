@@ -1,4 +1,4 @@
-package com.jcl.pbcms.config.rabbitmq;
+package org.apache.commons.autoconfig.commonconfig.config.rabbitmq;
 
 import com.rabbitmq.client.Channel;
 import org.springframework.amqp.core.Message;

@@ -1,4 +1,4 @@
-package com.jcl.pbcms.config;
+package org.apache.commons;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

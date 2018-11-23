@@ -1,4 +1,4 @@
-package com.jcl.pbcms.config.rest;
+package org.apache.commons.autoconfig.commonconfig.config.rest;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;

@@ -1,4 +1,4 @@
-package com.jcl.pbcms.config.datasource;
+package org.apache.commons.autoconfig.commonconfig.config.datasource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

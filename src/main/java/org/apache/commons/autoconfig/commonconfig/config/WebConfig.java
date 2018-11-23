@@ -1,4 +1,4 @@
-package com.jcl.pbcms.config;
+package org.apache.commons.autoconfig.commonconfig.config;
 
 
 import com.alibaba.fastjson.serializer.SerializerFeature;

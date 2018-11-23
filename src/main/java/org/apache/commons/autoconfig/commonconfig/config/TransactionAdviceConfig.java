@@ -1,4 +1,4 @@
-package com.jcl.pbcms.config;
+package org.apache.commons.autoconfig.commonconfig.config;
 
 import org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator;
 import org.springframework.beans.factory.annotation.Autowired;

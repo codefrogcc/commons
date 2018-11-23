@@ -1,4 +1,4 @@
-package com.jcl.pbcms.config;
+package org.apache.commons.autoconfig.commonconfig.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

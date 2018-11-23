@@ -1,4 +1,4 @@
-package com.jcl.pbcms.config.druid;
+package org.apache.commons.autoconfig.commonconfig.config.druid;
 import com.alibaba.druid.support.spring.stat.DruidStatInterceptor;
 import org.springframework.aop.support.DefaultPointcutAdvisor;
 import org.springframework.aop.support.JdkRegexpMethodPointcut;

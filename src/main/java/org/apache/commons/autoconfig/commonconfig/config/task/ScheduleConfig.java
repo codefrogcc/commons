@@ -1,4 +1,4 @@
-package com.jcl.pbcms.config.task;
+package org.apache.commons.autoconfig.commonconfig.config.task;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.SchedulingConfigurer;

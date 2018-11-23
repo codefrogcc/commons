@@ -1,4 +1,4 @@
-package com.jcl.pbcms.config.datasource;
+package org.apache.commons.autoconfig.commonconfig.config.datasource;
 
 import com.alibaba.druid.filter.Filter;
 import com.alibaba.druid.pool.DruidDataSource;

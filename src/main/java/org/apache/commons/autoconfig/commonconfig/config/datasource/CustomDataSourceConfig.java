@@ -1,4 +1,4 @@
-package com.jcl.pbcms.config.datasource;
+package org.apache.commons.autoconfig.commonconfig.config.datasource;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -16,23 +16,25 @@ import tk.mybatis.spring.annotation.MapperScan;
 import javax.sql.DataSource;
 
 @Configuration
-@MapperScan(basePackages = AuthDataSourceConfig.CUSTOM_PACKAGE,sqlSessionFactoryRef = "authSqlSessionFactory")
-public class AuthDataSourceConfig {
+@MapperScan(basePackages = CustomDataSourceConfig.CUSTOM_PACKAGE,sqlSessionFactoryRef = "customSqlSessionFactory")
+public class CustomDataSourceConfig {
 
-    private Logger logger = LoggerFactory.getLogger(AuthDataSourceConfig.class);
-    static final String CUSTOM_PACKAGE = "com.jcl.pbcms.authmapper";
-    private static final String CUSTOM_MAPPER_LOCAL = "classpath:mybatis/authmapper/*.xml";
+    private Logger logger = LoggerFactory.getLogger(CustomDataSourceConfig.class);
 
-    @Bean(name = "authDataSource")
-    @ConfigurationProperties(prefix = "auth.datasource")
-    public DataSource authDruidDataSource(){
+
+    static final String CUSTOM_PACKAGE = "com.jcl.pbcms.mapper1";
+    private static final String CUSTOM_MAPPER_LOCAL = "classpath:mybatis/mapper1/*.xml";
+
+    @Bean(name = "customDataSource")
+    @ConfigurationProperties(prefix = "custom.datasource")
+    public DataSource customDruidDataSource(){
         return new DruidDataSource();
     }
 
-    @Bean(name = "authSqlSessionFactory")
-    public SqlSessionFactory authSqlSessionFactory(){
+    @Bean(name = "customSqlSessionFactory")
+    public SqlSessionFactory customSqlSessionFactory(){
         final SqlSessionFactoryBean sessionFactoryBean = new SqlSessionFactoryBean();
-        sessionFactoryBean.setDataSource(authDruidDataSource());
+        sessionFactoryBean.setDataSource(customDruidDataSource());
 
         try {
             sessionFactoryBean.setConfigLocation(new ClassPathResource("mybatis/mybatis-config.xml"));
@@ -44,8 +46,9 @@ public class AuthDataSourceConfig {
         }
     }
 
-    @Bean(name = "authTransactionManager")
-    public DataSourceTransactionManager authTransactionManager(){
-        return new DataSourceTransactionManager(authDruidDataSource());
+    @Bean(name = "customTransactionManager")
+    public DataSourceTransactionManager customTransactionManager(){
+        return new DataSourceTransactionManager(customDruidDataSource());
     }
+
 }

@@ -1,4 +1,4 @@
-package com.jcl.pbcms.config.rabbitmq;
+package org.apache.commons.autoconfig.commonconfig.config.rabbitmq;
 
 import org.springframework.amqp.core.*;
 import org.springframework.context.annotation.Bean;
