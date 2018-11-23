@@ -6,7 +6,7 @@
 
     <groupId>com.github.codefrogcc</groupId>
     <artifactId>commons-config</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -118,6 +118,16 @@
         <dependency>
             <groupId>net.sf.ehcache</groupId>
             <artifactId>ehcache</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.14</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.14</version>
         </dependency>
         <dependency>
             <groupId>com.github.satant</groupId>
