@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  * List中的元素对象排序方法
- * @param <E>
+ * @param <E> 集合中的元素
  */
 public class MySortList<E> {
 

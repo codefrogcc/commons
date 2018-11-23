@@ -62,6 +62,7 @@ public class DateUtil {
      * 返回当前时间的星期
      * @param date 时间
      * @throws Exception 异常
+     * @return 当前时间的星期
      */
     public static int dayForWeek(Date date) throws Exception {
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
