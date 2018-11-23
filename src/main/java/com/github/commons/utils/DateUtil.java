@@ -60,9 +60,8 @@ public class DateUtil {
 
     /**
      * 返回当前时间的星期
-     * @param date
-     * @return int
-     * @throws Exception
+     * @param date 时间
+     * @throws Exception 异常
      */
     public static int dayForWeek(Date date) throws Exception {
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
@@ -523,8 +522,8 @@ public class DateUtil {
 
     /**
      * Description: 根据传入日期得到本月月初
-     * @param date
-     * @return Date
+     * @param date 时间
+     * @return Date 本月月初
      */
     public static Date getFirstDateOfMonth(Date date) {
         Calendar c = Calendar.getInstance();
@@ -681,7 +680,7 @@ public class DateUtil {
      * @param smdate 较小的时间
      * @param bdate 较大的时间
      * @return 相差天数
-     * @throws ParseException
+     * @throws ParseException 异常
      */
     public static int daysBetween(Date smdate,Date bdate) throws ParseException {
         SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
@@ -699,10 +698,10 @@ public class DateUtil {
 
     /**
      * 字符串的日期格式的计算
-     * @param smdate
-     * @param bdate
-     * @return int
-     * @throws ParseException
+     * @param smdate 字符串1
+     * @param bdate 字符串2
+     * @return int 数字
+     * @throws ParseException 异常
      */
     public static int daysBetween(String smdate,String bdate) throws ParseException{
         SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
@@ -720,7 +719,8 @@ public class DateUtil {
     /**
      * @param  dateStr  開始日期
      * @param  span  月份跨度
-     * @throws ParseException
+     * @return 字符串
+     * @throws ParseException 异常
      */
     public static String getLastDay(String dateStr, int span) throws ParseException{
         Calendar lastDate = Calendar.getInstance();
@@ -735,9 +735,9 @@ public class DateUtil {
 
     /**
      * 时间相加
-     * @param time1
-     * @param time2
-     * @return String
+     * @param time1 时间1
+     * @param time2 时间2
+     * @return String 时间之和
      */
     public static String timeAdd(String time1, String time2){
         String time = "00:00:00";

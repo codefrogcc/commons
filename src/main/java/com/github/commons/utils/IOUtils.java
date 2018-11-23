@@ -15,7 +15,7 @@ public class IOUtils {
      *
      * 逐行读取文件，返回List集合
      * @param filePath 文件路径
-     * @return List
+     * @return List 集合
      */
     public static List<String> readLine(String filePath) {
         List<String> list = new ArrayList<String>();
@@ -36,9 +36,9 @@ public class IOUtils {
 
     /**
      * 逐行写入文件
-     * @param content
-     * @param filePath
-     * @param fileName
+     * @param content 内容
+     * @param filePath 文件路径
+     * @param fileName 文件名称
      */
     public static void writeFile(List<String> content, String filePath, String fileName) {
         FileOutputStream fos = null;
@@ -77,9 +77,9 @@ public class IOUtils {
 
     /**
      * 复制文件
-     * @param inStream
-     * @param destFilePath
-     * @param destFileName
+     * @param inStream 流
+     * @param destFilePath 复制到的路径
+     * @param destFileName 复制的文件名称
      */
     public static void copyFile(InputStream inStream,String destFilePath,String destFileName) {
         BufferedReader br = null;

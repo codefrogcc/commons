@@ -43,8 +43,8 @@ public class AESUtil {
     /**
      * AES 解密操作
      *
-     * @param content
-     * @param password
+     * @param content 解密的内容
+     * @param password 使用密钥初始化
      * @return 返回解密后的字符串
      */
     public static String decrypt(String content, String password) {

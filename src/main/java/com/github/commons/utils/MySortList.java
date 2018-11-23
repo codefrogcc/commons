@@ -21,9 +21,9 @@ public class MySortList<E> {
     /**
      *
      * 对列表中的数据按指定字段进行排序。要求类必须有相关的方法返回字符串、整型、日期等值以进行比较。
-     * @param list
-     * @param method
-     * @param reverseFlag
+     * @param list 排序的集合
+     * @param method 集合中的元素的那个方法排序
+     * @param reverseFlag 是否倒序
      */
     public void sortByMethod(List<E> list, final String method,final boolean reverseFlag) {
         Collections.sort(list, (Object arg1, Object arg2) -> {

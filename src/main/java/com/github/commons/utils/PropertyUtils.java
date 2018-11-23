@@ -40,10 +40,10 @@ public class PropertyUtils {
 
     /**
      * 获取properties文件对应的属性值
-     * @param path
-     * @param fileName
-     * @param key
-     * @return String
+     * @param path 文件的路径
+     * @param fileName 文件的名称
+     * @param key 对应的Key
+     * @return String key对应的值
      */
     public static String getProperty(String path,String fileName,String key){
         if(properties == null){
@@ -75,11 +75,11 @@ public class PropertyUtils {
 
     /**
      * 修改或新增properties文件对应的属性值
-     * @param path
-     * @param fileName
-     * @param key
-     * @param value
-     * @return Boolean
+     * @param path 文件路径
+     * @param fileName 文件名称
+     * @param key 对应的key
+     * @param value 修改的值
+     * @return Boolean 是否成功
      */
     public static Boolean updateProperty(String path,String fileName,String key,String value){
         if(properties==null){
