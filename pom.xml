@@ -61,8 +61,8 @@
             <version>3.14</version>
         </dependency>
         <dependency>
-            <groupId>com.github.codefrogcc.allocation</groupId>
-            <artifactId>common-config</artifactId>
+            <groupId>com.github.codefrogcc</groupId>
+            <artifactId>allocation</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
