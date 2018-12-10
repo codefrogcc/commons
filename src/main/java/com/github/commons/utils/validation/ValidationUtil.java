@@ -12,9 +12,9 @@ import java.util.regex.Pattern;
 public class ValidationUtil {
     /*手机号格式验证*/
     private static final Pattern mobile_pattern = Pattern.compile("^1[3456789][0-9]{9}$");
-    /*密码正确格式为：以字母开头，长度在6-18之间，只能包含字符、数字和下划线。*/
-    private static final Pattern password_pattern = Pattern.compile("^[a-zA-Z]\\w{5,17}$");
-
+    /*密码正确格式为：以字母开头，长度在6-18之间，只能包含字符、数字和下划线。^[a-zA-Z]\w{5,17}$*/
+    /*必须包含大小写字母和数字的组合，不能使用特殊字符，长度在8-10之间*/
+    private static final Pattern password_pattern = Pattern.compile("^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,17}$");
     /*非负整数*/
     private static final Pattern non_negative_positive_integer = Pattern.compile("^\\d+$");
     /*非零正整数*/
